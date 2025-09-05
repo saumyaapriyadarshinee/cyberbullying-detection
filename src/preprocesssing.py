@@ -32,13 +32,6 @@ def load_and_preprocess(path):
     return df
 
 if __name__ == "__main__":
-    dataset_path = "data/raw/sample_data.csv"
-    save_path = "data/splits/clean_data.csv"
-
+    dataset_path = "../data/raw/sample_data.csv"
     df = load_and_preprocess(dataset_path)
     print(df.head())
-
-    # Save cleaned dataset
-    df.to_csv(save_path, index=False)
-    print(f"✅ Cleaned dataset saved to {save_path}")
-
